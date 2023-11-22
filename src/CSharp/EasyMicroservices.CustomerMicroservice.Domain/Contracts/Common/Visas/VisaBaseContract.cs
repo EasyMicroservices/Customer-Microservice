@@ -8,6 +8,7 @@ namespace EasyMicroservices.CustomerMicroservice.Contracts.Common.Visas
         public DateOnly? EntryDate { get; set; }
         public DateOnly? ExitDate { get; set; }
         public int? Duration { get; set; }
+        public string Number { get; set; }
 
         public string UniqueIdentity { get; set; }
         public DateTime CreationDateTime { get; set; }

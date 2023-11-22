@@ -13162,6 +13162,7 @@ namespace Customer.GeneratedServices
     public partial class AddressBaseContract : System.ComponentModel.INotifyPropertyChanged
     {
         private string _postalCode;
+        private string _address;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -13178,6 +13179,21 @@ namespace Customer.GeneratedServices
                 if (_postalCode != value)
                 {
                     _postalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Address
+        {
+            get { return _address; }
+
+            set
+            {
+                if (_address != value)
+                {
+                    _address = value;
                     RaisePropertyChanged();
                 }
             }
@@ -13272,6 +13288,7 @@ namespace Customer.GeneratedServices
     public partial class AddressContract : System.ComponentModel.INotifyPropertyChanged
     {
         private string _postalCode;
+        private string _address;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -13289,6 +13306,21 @@ namespace Customer.GeneratedServices
                 if (_postalCode != value)
                 {
                     _postalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Address
+        {
+            get { return _address; }
+
+            set
+            {
+                if (_address != value)
+                {
+                    _address = value;
                     RaisePropertyChanged();
                 }
             }
@@ -13586,6 +13618,7 @@ namespace Customer.GeneratedServices
     public partial class AddressLanguageContract : System.ComponentModel.INotifyPropertyChanged
     {
         private string _postalCode;
+        private string _address;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -13603,6 +13636,21 @@ namespace Customer.GeneratedServices
                 if (_postalCode != value)
                 {
                     _postalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Address
+        {
+            get { return _address; }
+
+            set
+            {
+                if (_address != value)
+                {
+                    _address = value;
                     RaisePropertyChanged();
                 }
             }
@@ -14514,6 +14562,7 @@ namespace Customer.GeneratedServices
     public partial class CreateAddressRequestContract : System.ComponentModel.INotifyPropertyChanged
     {
         private string _postalCode;
+        private string _address;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -14530,6 +14579,21 @@ namespace Customer.GeneratedServices
                 if (_postalCode != value)
                 {
                     _postalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Address
+        {
+            get { return _address; }
+
+            set
+            {
+                if (_address != value)
+                {
+                    _address = value;
                     RaisePropertyChanged();
                 }
             }
@@ -16069,6 +16133,7 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _entryDate;
         private System.DateTimeOffset? _exitDate;
         private int? _duration;
+        private string _number;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -16117,6 +16182,21 @@ namespace Customer.GeneratedServices
                 if (_duration != value)
                 {
                     _duration = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("number", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Number
+        {
+            get { return _number; }
+
+            set
+            {
+                if (_number != value)
+                {
+                    _number = value;
                     RaisePropertyChanged();
                 }
             }
@@ -20355,6 +20435,7 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _birthDate;
         private RoleOnSiteType _roleOnSiteType;
         private PersonType _type;
+        private string _description;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -20367,7 +20448,6 @@ namespace Customer.GeneratedServices
         private long _id;
         private string _firstName;
         private string _lastName;
-        private string _description;
         private System.Collections.Generic.ICollection<AddressBaseContract> _addresses;
         private System.Collections.Generic.ICollection<EmailBaseContract> _emails;
         private System.Collections.Generic.ICollection<PassportBaseContract> _passports;
@@ -20477,6 +20557,21 @@ namespace Customer.GeneratedServices
                 if (_type != value)
                 {
                     _type = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Description
+        {
+            get { return _description; }
+
+            set
+            {
+                if (_description != value)
+                {
+                    _description = value;
                     RaisePropertyChanged();
                 }
             }
@@ -20657,21 +20752,6 @@ namespace Customer.GeneratedServices
                 if (_lastName != value)
                 {
                     _lastName = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Description
-        {
-            get { return _description; }
-
-            set
-            {
-                if (_description != value)
-                {
-                    _description = value;
                     RaisePropertyChanged();
                 }
             }
@@ -21003,7 +21083,6 @@ namespace Customer.GeneratedServices
         private long _id;
         private System.Collections.Generic.ICollection<LanguageDataContract> _firstNames;
         private System.Collections.Generic.ICollection<LanguageDataContract> _lastNames;
-        private System.Collections.Generic.ICollection<LanguageDataContract> _descriptions;
 
         [Newtonsoft.Json.JsonProperty("nationalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NationalCode
@@ -21301,21 +21380,6 @@ namespace Customer.GeneratedServices
                 if (_lastNames != value)
                 {
                     _lastNames = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("descriptions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LanguageDataContract> Descriptions
-        {
-            get { return _descriptions; }
-
-            set
-            {
-                if (_descriptions != value)
-                {
-                    _descriptions = value;
                     RaisePropertyChanged();
                 }
             }
@@ -22275,6 +22339,7 @@ namespace Customer.GeneratedServices
     public partial class UpdateAddressRequestContract : System.ComponentModel.INotifyPropertyChanged
     {
         private string _postalCode;
+        private string _address;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -22292,6 +22357,21 @@ namespace Customer.GeneratedServices
                 if (_postalCode != value)
                 {
                     _postalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Address
+        {
+            get { return _address; }
+
+            set
+            {
+                if (_address != value)
+                {
+                    _address = value;
                     RaisePropertyChanged();
                 }
             }
@@ -23958,6 +24038,7 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _entryDate;
         private System.DateTimeOffset? _exitDate;
         private int? _duration;
+        private string _number;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -24007,6 +24088,21 @@ namespace Customer.GeneratedServices
                 if (_duration != value)
                 {
                     _duration = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("number", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Number
+        {
+            get { return _number; }
+
+            set
+            {
+                if (_number != value)
+                {
+                    _number = value;
                     RaisePropertyChanged();
                 }
             }
@@ -24178,6 +24274,7 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _entryDate;
         private System.DateTimeOffset? _exitDate;
         private int? _duration;
+        private string _number;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -24226,6 +24323,21 @@ namespace Customer.GeneratedServices
                 if (_duration != value)
                 {
                     _duration = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("number", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Number
+        {
+            get { return _number; }
+
+            set
+            {
+                if (_number != value)
+                {
+                    _number = value;
                     RaisePropertyChanged();
                 }
             }
@@ -24322,6 +24434,7 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _entryDate;
         private System.DateTimeOffset? _exitDate;
         private int? _duration;
+        private string _number;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -24371,6 +24484,21 @@ namespace Customer.GeneratedServices
                 if (_duration != value)
                 {
                     _duration = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("number", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Number
+        {
+            get { return _number; }
+
+            set
+            {
+                if (_number != value)
+                {
+                    _number = value;
                     RaisePropertyChanged();
                 }
             }
@@ -24670,6 +24798,7 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _entryDate;
         private System.DateTimeOffset? _exitDate;
         private int? _duration;
+        private string _number;
         private string _uniqueIdentity;
         private System.DateTimeOffset _creationDateTime;
         private System.DateTimeOffset? _modificationDateTime;
@@ -24719,6 +24848,21 @@ namespace Customer.GeneratedServices
                 if (_duration != value)
                 {
                     _duration = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("number", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Number
+        {
+            get { return _number; }
+
+            set
+            {
+                if (_number != value)
+                {
+                    _number = value;
                     RaisePropertyChanged();
                 }
             }
