@@ -21,15 +21,24 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Contexts
         public DbSet<VisaEntity> Visas { get; set; }
         public DbSet<PersonRelationEntity> PersonRelations { get; set; }
         public DbSet<PersonCategoryEntity> PersonCategories { get; set; }
-        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.AutoModelCreating(modelBuilder);
-
             modelBuilder.Entity<PersonRelationEntity>(entity =>
             {
                 entity.HasKey(x => new { x.FromPersonId, x.ToPersonId });
+
+                entity.HasOne(x => x.FromPerson)
+                .WithMany(x => x.FromPersonRelations)
+                .HasForeignKey(x => x.FromPersonId);
+
+                entity.HasOne(x => x.ToPerson)
+                .WithMany(x => x.ToPersonRelations)
+                .HasForeignKey(x => x.ToPersonId);
             });
+
+
+            base.AutoModelCreating(modelBuilder);
         }
     }
 }

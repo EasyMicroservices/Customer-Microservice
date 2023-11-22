@@ -1,7 +1,6 @@
-using EasyMicroservices.CustomerMicroservice.Database.Contexts;
 using EasyMicroservices.Cores.AspEntityFrameworkCoreApi;
 using EasyMicroservices.Cores.Relational.EntityFrameworkCore.Intrerfaces;
-using EasyMicroservices.Cores.AspEntityFrameworkCoreApi.Interfaces;
+using EasyMicroservices.CustomerMicroservice.Database.Contexts;
 
 namespace EasyMicroservices.CustomerMicroservice.WebApi
 {
