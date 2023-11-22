@@ -20,6 +20,7 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Contexts
         public DbSet<CertificationEntity> Certifications { get; set; }
         public DbSet<VisaEntity> Visas { get; set; }
         public DbSet<PersonRelationEntity> PersonRelations { get; set; }
+        public DbSet<PersonCategoryEntity> PersonCategories { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

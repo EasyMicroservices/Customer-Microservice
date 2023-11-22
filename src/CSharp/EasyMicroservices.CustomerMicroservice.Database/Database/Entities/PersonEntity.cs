@@ -25,6 +25,9 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Entities
         public MaritalStatusType? MaritalStatus { get; set; }
         public DateOnly? BirthDate { get; set; }
 
+        public long? CategoryId { get; set; }
+        public PersonCategoryEntity Category { get; set; }
+
         public ICollection<AddressEntity> Addresses { get; set; }
         public ICollection<EmailEntity> Emails { get; set; }
         public ICollection<PassportEntity> Passports { get; set; }
