@@ -7097,6 +7097,28 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
+          "nationalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderType": {
+            "$ref": "#/components/schemas/GenderType"
+          },
+          "nationalityType": {
+            "$ref": "#/components/schemas/NationalityType"
+          },
+          "maritalStatus": {
+            "$ref": "#/components/schemas/MaritalStatusType"
+          },
+          "birthDate": {
+            "title": "Nullable<DateOnly>",
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "roleOnSiteType": {
+            "$ref": "#/components/schemas/RoleOnSiteType"
+          },
           "type": {
             "$ref": "#/components/schemas/PersonType"
           },
@@ -7126,6 +7148,12 @@
           },
           "isDeleted": {
             "type": "boolean"
+          },
+          "categoryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
           },
           "firstNames": {
             "title": "List<LanguageDataContract>",
@@ -7588,6 +7616,30 @@
           }
         }
       },
+      "GenderType": {
+        "type": "integer",
+        "format": "int32",
+        "x-enumNames": [
+          "None",
+          "Default",
+          "All",
+          "Other",
+          "Unknown",
+          "Nothing",
+          "Male",
+          "Female"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
       "GetByLanguageRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -7747,6 +7799,30 @@
             "nullable": true
           }
         }
+      },
+      "MaritalStatusType": {
+        "type": "integer",
+        "format": "int32",
+        "x-enumNames": [
+          "None",
+          "Default",
+          "All",
+          "Other",
+          "Unknown",
+          "Nothing",
+          "Married",
+          "Single"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
       },
       "MessageContract": {
         "type": "object",
@@ -8599,6 +8675,28 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
+          "nationalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderType": {
+            "$ref": "#/components/schemas/GenderType"
+          },
+          "nationalityType": {
+            "$ref": "#/components/schemas/NationalityType"
+          },
+          "maritalStatus": {
+            "$ref": "#/components/schemas/MaritalStatusType"
+          },
+          "birthDate": {
+            "title": "Nullable<DateOnly>",
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "roleOnSiteType": {
+            "$ref": "#/components/schemas/RoleOnSiteType"
+          },
           "type": {
             "$ref": "#/components/schemas/PersonType"
           },
@@ -8628,6 +8726,12 @@
           },
           "isDeleted": {
             "type": "boolean"
+          },
+          "categoryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
           },
           "id": {
             "type": "integer",
@@ -8698,6 +8802,28 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
+          "nationalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderType": {
+            "$ref": "#/components/schemas/GenderType"
+          },
+          "nationalityType": {
+            "$ref": "#/components/schemas/NationalityType"
+          },
+          "maritalStatus": {
+            "$ref": "#/components/schemas/MaritalStatusType"
+          },
+          "birthDate": {
+            "title": "Nullable<DateOnly>",
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "roleOnSiteType": {
+            "$ref": "#/components/schemas/RoleOnSiteType"
+          },
           "type": {
             "$ref": "#/components/schemas/PersonType"
           },
@@ -8727,6 +8853,12 @@
           },
           "isDeleted": {
             "type": "boolean"
+          },
+          "categoryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
           },
           "id": {
             "type": "integer",
@@ -8977,6 +9109,30 @@
           8,
           9,
           10
+        ]
+      },
+      "RoleOnSiteType": {
+        "type": "integer",
+        "format": "int32",
+        "x-enumNames": [
+          "None",
+          "Default",
+          "All",
+          "Other",
+          "Unknown",
+          "Nothing",
+          "Customer",
+          "Seller"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
         ]
       },
       "ServiceDetailsContract": {
@@ -9300,6 +9456,28 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
+          "nationalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderType": {
+            "$ref": "#/components/schemas/GenderType"
+          },
+          "nationalityType": {
+            "$ref": "#/components/schemas/NationalityType"
+          },
+          "maritalStatus": {
+            "$ref": "#/components/schemas/MaritalStatusType"
+          },
+          "birthDate": {
+            "title": "Nullable<DateOnly>",
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "roleOnSiteType": {
+            "$ref": "#/components/schemas/RoleOnSiteType"
+          },
           "type": {
             "$ref": "#/components/schemas/PersonType"
           },
@@ -9329,6 +9507,12 @@
           },
           "isDeleted": {
             "type": "boolean"
+          },
+          "categoryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
           },
           "firstNames": {
             "title": "List<LanguageDataContract>",
