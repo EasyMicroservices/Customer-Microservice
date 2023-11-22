@@ -11,7 +11,7 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Entities
     public class PersonEntity : PersonSchema, IIdSchema<long>
     {
         public long Id { get; set; }
-        
+
         public long? CategoryId { get; set; }
         public PersonCategoryEntity Category { get; set; }
 
