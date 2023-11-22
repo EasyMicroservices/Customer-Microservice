@@ -1,6 +1,6 @@
 ﻿using EasyMicroservices.Cores.AspEntityFrameworkCoreApi.Interfaces;
-using EasyMicroservices.CustomerMicroservice.Contracts.Common;
-using EasyMicroservices.CustomerMicroservice.Contracts.Requests;
+using EasyMicroservices.CustomerMicroservice.Contracts.Common.Certifications;
+using EasyMicroservices.CustomerMicroservice.Contracts.Requests.Certifications;
 using EasyMicroservices.CustomerMicroservice.Database.Entities;
 
 namespace EasyMicroservices.CustomerMicroservice.WebApi.Controllers

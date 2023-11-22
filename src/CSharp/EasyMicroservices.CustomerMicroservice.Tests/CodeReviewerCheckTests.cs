@@ -1,5 +1,5 @@
 using CodeReviewer.Engine;
-using EasyMicroservices.CustomerMicroservice.Contracts.Common;
+using EasyMicroservices.CustomerMicroservice.Contracts.Common.Persons;
 using EasyMicroservices.CustomerMicroservice.Database.Entities;
 using EasyMicroservices.CustomerMicroservice.WebApi.Controllers;
 using EasyMicroservices.Tests;
