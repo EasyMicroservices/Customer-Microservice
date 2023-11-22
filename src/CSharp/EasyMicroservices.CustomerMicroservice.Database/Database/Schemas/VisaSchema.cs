@@ -8,5 +8,6 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Schemas
         public DateOnly? EntryDate { get; set; }
         public DateOnly? ExitDate { get; set; }
         public int? Duration { get; set; }
+        public string Number { get; set; }
     }
 }
