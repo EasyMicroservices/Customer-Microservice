@@ -2447,12 +2447,826 @@
         }
       }
     },
+    "/api/Link/Add": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "Add4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLinkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLinkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLinkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/Filter": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "Filter4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/Update": {
+      "put": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "Update4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/UpdateChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "UpdateChangedValuesOnly4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "GetAllByLanguage4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/GetByIdAllLanguage": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "GetByIdAllLanguage4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/AddBulk": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "AddBulk4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLinkRequestContractCreateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLinkRequestContractCreateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLinkRequestContractCreateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/UpdateBulk": {
+      "put": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "UpdateBulk4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/UpdateBulkChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "UpdateBulkChangedValuesOnly4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLinkRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/HardDeleteById": {
+      "delete": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "HardDeleteById4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/HardDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "HardDeleteBulkByIds4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/SoftDeleteById": {
+      "delete": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "SoftDeleteById4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/SoftDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "SoftDeleteBulkByIds4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/GetById": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "GetById4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/GetByUniqueIdentity": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "GetByUniqueIdentity4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/GetAll": {
+      "get": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "GetAll4",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Link/GetAllByUniqueIdentity": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "GetAllByUniqueIdentity4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Passport/Add": {
       "post": {
         "tags": [
           "Passport"
         ],
-        "operationId": "Add4",
+        "operationId": "Add5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2501,7 +3315,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "Filter4",
+        "operationId": "Filter5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2550,7 +3364,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "Update4",
+        "operationId": "Update5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2599,7 +3413,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "UpdateChangedValuesOnly4",
+        "operationId": "UpdateChangedValuesOnly5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2648,7 +3462,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "GetAllByLanguage4",
+        "operationId": "GetAllByLanguage5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2697,7 +3511,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "GetByIdAllLanguage4",
+        "operationId": "GetByIdAllLanguage5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2746,7 +3560,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "AddBulk4",
+        "operationId": "AddBulk5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2795,7 +3609,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "UpdateBulk4",
+        "operationId": "UpdateBulk5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2844,7 +3658,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "UpdateBulkChangedValuesOnly4",
+        "operationId": "UpdateBulkChangedValuesOnly5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2893,7 +3707,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "HardDeleteById4",
+        "operationId": "HardDeleteById5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2942,7 +3756,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "HardDeleteBulkByIds4",
+        "operationId": "HardDeleteBulkByIds5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2991,7 +3805,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "SoftDeleteById4",
+        "operationId": "SoftDeleteById5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3040,7 +3854,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "SoftDeleteBulkByIds4",
+        "operationId": "SoftDeleteBulkByIds5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3089,7 +3903,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "GetById4",
+        "operationId": "GetById5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3138,7 +3952,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "GetByUniqueIdentity4",
+        "operationId": "GetByUniqueIdentity5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3187,7 +4001,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "GetAll4",
+        "operationId": "GetAll5",
         "responses": {
           "200": {
             "description": "Success",
@@ -3217,7 +4031,7 @@
         "tags": [
           "Passport"
         ],
-        "operationId": "GetAllByUniqueIdentity4",
+        "operationId": "GetAllByUniqueIdentity5",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3266,7 +4080,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "Add5",
+        "operationId": "Add6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3315,7 +4129,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "Filter5",
+        "operationId": "Filter6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3364,7 +4178,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "Update5",
+        "operationId": "Update6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3413,7 +4227,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "UpdateChangedValuesOnly5",
+        "operationId": "UpdateChangedValuesOnly6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3462,7 +4276,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "GetAllByLanguage5",
+        "operationId": "GetAllByLanguage6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3511,7 +4325,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "GetByIdAllLanguage5",
+        "operationId": "GetByIdAllLanguage6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3560,7 +4374,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "AddBulk5",
+        "operationId": "AddBulk6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3609,7 +4423,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "UpdateBulk5",
+        "operationId": "UpdateBulk6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3658,7 +4472,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "UpdateBulkChangedValuesOnly5",
+        "operationId": "UpdateBulkChangedValuesOnly6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3707,7 +4521,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "HardDeleteById5",
+        "operationId": "HardDeleteById6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3756,7 +4570,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "HardDeleteBulkByIds5",
+        "operationId": "HardDeleteBulkByIds6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3805,7 +4619,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "SoftDeleteById5",
+        "operationId": "SoftDeleteById6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3854,7 +4668,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "SoftDeleteBulkByIds5",
+        "operationId": "SoftDeleteBulkByIds6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3903,7 +4717,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "GetById5",
+        "operationId": "GetById6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3952,7 +4766,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "GetByUniqueIdentity5",
+        "operationId": "GetByUniqueIdentity6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4001,7 +4815,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "GetAll5",
+        "operationId": "GetAll6",
         "responses": {
           "200": {
             "description": "Success",
@@ -4031,7 +4845,7 @@
         "tags": [
           "Person"
         ],
-        "operationId": "GetAllByUniqueIdentity5",
+        "operationId": "GetAllByUniqueIdentity6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4080,7 +4894,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "Add6",
+        "operationId": "Add7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4129,7 +4943,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "Filter6",
+        "operationId": "Filter7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4178,7 +4992,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "Update6",
+        "operationId": "Update7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4227,7 +5041,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "UpdateChangedValuesOnly6",
+        "operationId": "UpdateChangedValuesOnly7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4276,7 +5090,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "GetAllByLanguage6",
+        "operationId": "GetAllByLanguage7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4325,7 +5139,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "GetByIdAllLanguage6",
+        "operationId": "GetByIdAllLanguage7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4374,7 +5188,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "AddBulk6",
+        "operationId": "AddBulk7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4423,7 +5237,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "UpdateBulk6",
+        "operationId": "UpdateBulk7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4472,7 +5286,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "UpdateBulkChangedValuesOnly6",
+        "operationId": "UpdateBulkChangedValuesOnly7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4521,7 +5335,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "HardDeleteById6",
+        "operationId": "HardDeleteById7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4570,7 +5384,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "HardDeleteBulkByIds6",
+        "operationId": "HardDeleteBulkByIds7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4619,7 +5433,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "SoftDeleteById6",
+        "operationId": "SoftDeleteById7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4668,7 +5482,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "SoftDeleteBulkByIds6",
+        "operationId": "SoftDeleteBulkByIds7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4717,7 +5531,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "GetById6",
+        "operationId": "GetById7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4766,7 +5580,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "GetByUniqueIdentity6",
+        "operationId": "GetByUniqueIdentity7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4815,7 +5629,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "GetAll6",
+        "operationId": "GetAll7",
         "responses": {
           "200": {
             "description": "Success",
@@ -4845,7 +5659,7 @@
         "tags": [
           "PersonCategory"
         ],
-        "operationId": "GetAllByUniqueIdentity6",
+        "operationId": "GetAllByUniqueIdentity7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4894,7 +5708,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "Add7",
+        "operationId": "Add8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4943,7 +5757,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "Filter7",
+        "operationId": "Filter8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4992,7 +5806,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "Update7",
+        "operationId": "Update8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5041,7 +5855,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "UpdateChangedValuesOnly7",
+        "operationId": "UpdateChangedValuesOnly8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5090,7 +5904,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "GetAllByLanguage7",
+        "operationId": "GetAllByLanguage8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5139,7 +5953,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "GetByIdAllLanguage7",
+        "operationId": "GetByIdAllLanguage8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5188,7 +6002,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "AddBulk7",
+        "operationId": "AddBulk8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5237,7 +6051,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "UpdateBulk7",
+        "operationId": "UpdateBulk8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5286,7 +6100,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "UpdateBulkChangedValuesOnly7",
+        "operationId": "UpdateBulkChangedValuesOnly8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5335,7 +6149,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "HardDeleteById7",
+        "operationId": "HardDeleteById8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5384,7 +6198,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "HardDeleteBulkByIds7",
+        "operationId": "HardDeleteBulkByIds8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5433,7 +6247,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "SoftDeleteById7",
+        "operationId": "SoftDeleteById8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5482,7 +6296,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "SoftDeleteBulkByIds7",
+        "operationId": "SoftDeleteBulkByIds8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5531,7 +6345,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "GetById7",
+        "operationId": "GetById8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5580,7 +6394,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "GetByUniqueIdentity7",
+        "operationId": "GetByUniqueIdentity8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5629,7 +6443,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "GetAll7",
+        "operationId": "GetAll8",
         "responses": {
           "200": {
             "description": "Success",
@@ -5659,7 +6473,7 @@
         "tags": [
           "Phone"
         ],
-        "operationId": "GetAllByUniqueIdentity7",
+        "operationId": "GetAllByUniqueIdentity8",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5708,7 +6522,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "Add8",
+        "operationId": "Add9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5757,7 +6571,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "Filter8",
+        "operationId": "Filter9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5806,7 +6620,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "Update8",
+        "operationId": "Update9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5855,7 +6669,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "UpdateChangedValuesOnly8",
+        "operationId": "UpdateChangedValuesOnly9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5904,7 +6718,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "GetAllByLanguage8",
+        "operationId": "GetAllByLanguage9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5953,7 +6767,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "GetByIdAllLanguage8",
+        "operationId": "GetByIdAllLanguage9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6002,7 +6816,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "AddBulk8",
+        "operationId": "AddBulk9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6051,7 +6865,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "UpdateBulk8",
+        "operationId": "UpdateBulk9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6100,7 +6914,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "UpdateBulkChangedValuesOnly8",
+        "operationId": "UpdateBulkChangedValuesOnly9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6149,7 +6963,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "HardDeleteById8",
+        "operationId": "HardDeleteById9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6198,7 +7012,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "HardDeleteBulkByIds8",
+        "operationId": "HardDeleteBulkByIds9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6247,7 +7061,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "SoftDeleteById8",
+        "operationId": "SoftDeleteById9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6296,7 +7110,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "SoftDeleteBulkByIds8",
+        "operationId": "SoftDeleteBulkByIds9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6345,7 +7159,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "GetById8",
+        "operationId": "GetById9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6394,7 +7208,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "GetByUniqueIdentity8",
+        "operationId": "GetByUniqueIdentity9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6443,7 +7257,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "GetAll8",
+        "operationId": "GetAll9",
         "responses": {
           "200": {
             "description": "Success",
@@ -6473,7 +7287,7 @@
         "tags": [
           "Visa"
         ],
-        "operationId": "GetAllByUniqueIdentity8",
+        "operationId": "GetAllByUniqueIdentity9",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6982,6 +7796,57 @@
           }
         }
       },
+      "CreateLinkRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "$ref": "#/components/schemas/LinkType"
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          },
+          "creationDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modificationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deletedDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        }
+      },
+      "CreateLinkRequestContractCreateBulkRequestContract": {
+        "title": "CreateBulkRequestContract<CreateLinkRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<CreateLinkRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CreateLinkRequestContract"
+            }
+          }
+        }
+      },
       "CreatePassportRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -7150,6 +8015,24 @@
             "type": "boolean"
           },
           "categoryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "cityId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "countryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "provinceId": {
             "title": "Nullable<Int64>",
             "type": "integer",
             "format": "int64",
@@ -7799,6 +8682,178 @@
             "nullable": true
           }
         }
+      },
+      "LinkContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "$ref": "#/components/schemas/LinkType"
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          },
+          "creationDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modificationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deletedDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "LinkContractListMessageContract": {
+        "title": "ListMessageContract<LinkContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<LinkContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/LinkContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        }
+      },
+      "LinkContractMessageContract": {
+        "title": "MessageContract<LinkContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "$ref": "#/components/schemas/LinkContract"
+          }
+        }
+      },
+      "LinkLanguageContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "$ref": "#/components/schemas/LinkType"
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          },
+          "creationDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modificationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deletedDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "LinkLanguageContractMessageContract": {
+        "title": "MessageContract<LinkLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "$ref": "#/components/schemas/LinkLanguageContract"
+          }
+        }
+      },
+      "LinkType": {
+        "type": "integer",
+        "format": "int32",
+        "x-enumNames": [
+          "None",
+          "Default",
+          "All",
+          "Other",
+          "Unknown",
+          "Nothing",
+          "Website"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
       },
       "MaritalStatusType": {
         "type": "integer",
@@ -8700,10 +9755,6 @@
           "type": {
             "$ref": "#/components/schemas/PersonType"
           },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
           "uniqueIdentity": {
             "type": "string",
             "nullable": true
@@ -8733,6 +9784,24 @@
             "format": "int64",
             "nullable": true
           },
+          "cityId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "countryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "provinceId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
           "id": {
             "type": "integer",
             "format": "int64"
@@ -8742,6 +9811,10 @@
             "nullable": true
           },
           "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
             "type": "string",
             "nullable": true
           }
@@ -8860,6 +9933,24 @@
             "format": "int64",
             "nullable": true
           },
+          "cityId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "countryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "provinceId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
           "id": {
             "type": "integer",
             "format": "int64"
@@ -8873,6 +9964,14 @@
             }
           },
           "lastNames": {
+            "title": "List<LanguageDataContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/LanguageDataContract"
+            }
+          },
+          "descriptions": {
             "title": "List<LanguageDataContract>",
             "type": "array",
             "nullable": true,
@@ -9333,6 +10432,61 @@
           }
         }
       },
+      "UpdateLinkRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "$ref": "#/components/schemas/LinkType"
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          },
+          "creationDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modificationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deletedDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "UpdateLinkRequestContractUpdateBulkRequestContract": {
+        "title": "UpdateBulkRequestContract<UpdateLinkRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<UpdateLinkRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UpdateLinkRequestContract"
+            }
+          }
+        }
+      },
       "UpdatePassportRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -9509,6 +10663,24 @@
             "type": "boolean"
           },
           "categoryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "cityId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "countryId": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "provinceId": {
             "title": "Nullable<Int64>",
             "type": "integer",
             "format": "int64",

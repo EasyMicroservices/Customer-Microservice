@@ -23,6 +23,7 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Entities
         public ICollection<VisaEntity> Visas { get; set; }
         public ICollection<PersonRelationEntity> FromPersonRelations { get; set; }
         public ICollection<PersonRelationEntity> ToPersonRelations { get; set; }
+        public ICollection<LinkEntity> Links { get; set; }
     }
 }
 

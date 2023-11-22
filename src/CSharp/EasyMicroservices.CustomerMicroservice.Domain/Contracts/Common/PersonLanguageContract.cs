@@ -13,5 +13,8 @@ namespace EasyMicroservices.CustomerMicroservice.Contracts.Common
 
         [ContentLanguage(nameof(PersonContract.LastName))]
         public List<LanguageDataContract> LastNames { get; set; }
+
+        [ContentLanguage(nameof(PersonContract.Description))]
+        public List<LanguageDataContract> Descriptions { get; set; }
     }
 }
