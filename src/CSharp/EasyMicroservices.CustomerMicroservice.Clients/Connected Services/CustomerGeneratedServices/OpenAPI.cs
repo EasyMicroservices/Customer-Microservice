@@ -13581,6 +13581,12 @@ namespace Customer.GeneratedServices
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class CreatePersonRequestContract : System.ComponentModel.INotifyPropertyChanged
     {
+        private string _nationalCode;
+        private GenderType _genderType;
+        private NationalityType _nationalityType;
+        private MaritalStatusType _maritalStatus;
+        private System.DateTimeOffset? _birthDate;
+        private RoleOnSiteType _roleOnSiteType;
         private PersonType _type;
         private string _description;
         private string _uniqueIdentity;
@@ -13588,8 +13594,100 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _modificationDateTime;
         private System.DateTimeOffset? _deletedDateTime;
         private bool _isDeleted;
+        private long? _categoryId;
         private System.Collections.Generic.ICollection<LanguageDataContract> _firstNames;
         private System.Collections.Generic.ICollection<LanguageDataContract> _lastNames;
+
+        [Newtonsoft.Json.JsonProperty("nationalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string NationalCode
+        {
+            get { return _nationalCode; }
+
+            set
+            {
+                if (_nationalCode != value)
+                {
+                    _nationalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("genderType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public GenderType GenderType
+        {
+            get { return _genderType; }
+
+            set
+            {
+                if (_genderType != value)
+                {
+                    _genderType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("nationalityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public NationalityType NationalityType
+        {
+            get { return _nationalityType; }
+
+            set
+            {
+                if (_nationalityType != value)
+                {
+                    _nationalityType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("maritalStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public MaritalStatusType MaritalStatus
+        {
+            get { return _maritalStatus; }
+
+            set
+            {
+                if (_maritalStatus != value)
+                {
+                    _maritalStatus = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("birthDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonConverter(typeof(DateFormatConverter))]
+        public System.DateTimeOffset? BirthDate
+        {
+            get { return _birthDate; }
+
+            set
+            {
+                if (_birthDate != value)
+                {
+                    _birthDate = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("roleOnSiteType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RoleOnSiteType RoleOnSiteType
+        {
+            get { return _roleOnSiteType; }
+
+            set
+            {
+                if (_roleOnSiteType != value)
+                {
+                    _roleOnSiteType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
 
         [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PersonType Type
@@ -13691,6 +13789,21 @@ namespace Customer.GeneratedServices
                 if (_isDeleted != value)
                 {
                     _isDeleted = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("categoryId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? CategoryId
+        {
+            get { return _categoryId; }
+
+            set
+            {
+                if (_categoryId != value)
+                {
+                    _categoryId = value;
                     RaisePropertyChanged();
                 }
             }
@@ -15051,6 +15164,28 @@ namespace Customer.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public enum GenderType
+    {
+
+        None = 0,
+
+        Default = 1,
+
+        All = 2,
+
+        Other = 3,
+
+        Unknown = 4,
+
+        Nothing = 5,
+
+        Male = 6,
+
+        Female = 7,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class GetByLanguageRequestContract : System.ComponentModel.INotifyPropertyChanged
     {
         private string _language;
@@ -15484,6 +15619,28 @@ namespace Customer.GeneratedServices
             if (handler != null)
                 handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
         }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public enum MaritalStatusType
+    {
+
+        None = 0,
+
+        Default = 1,
+
+        All = 2,
+
+        Other = 3,
+
+        Unknown = 4,
+
+        Nothing = 5,
+
+        Married = 6,
+
+        Single = 7,
+
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
@@ -17199,6 +17356,12 @@ namespace Customer.GeneratedServices
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class PersonContract : System.ComponentModel.INotifyPropertyChanged
     {
+        private string _nationalCode;
+        private GenderType _genderType;
+        private NationalityType _nationalityType;
+        private MaritalStatusType _maritalStatus;
+        private System.DateTimeOffset? _birthDate;
+        private RoleOnSiteType _roleOnSiteType;
         private PersonType _type;
         private string _description;
         private string _uniqueIdentity;
@@ -17206,9 +17369,101 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _modificationDateTime;
         private System.DateTimeOffset? _deletedDateTime;
         private bool _isDeleted;
+        private long? _categoryId;
         private long _id;
         private string _firstName;
         private string _lastName;
+
+        [Newtonsoft.Json.JsonProperty("nationalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string NationalCode
+        {
+            get { return _nationalCode; }
+
+            set
+            {
+                if (_nationalCode != value)
+                {
+                    _nationalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("genderType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public GenderType GenderType
+        {
+            get { return _genderType; }
+
+            set
+            {
+                if (_genderType != value)
+                {
+                    _genderType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("nationalityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public NationalityType NationalityType
+        {
+            get { return _nationalityType; }
+
+            set
+            {
+                if (_nationalityType != value)
+                {
+                    _nationalityType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("maritalStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public MaritalStatusType MaritalStatus
+        {
+            get { return _maritalStatus; }
+
+            set
+            {
+                if (_maritalStatus != value)
+                {
+                    _maritalStatus = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("birthDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonConverter(typeof(DateFormatConverter))]
+        public System.DateTimeOffset? BirthDate
+        {
+            get { return _birthDate; }
+
+            set
+            {
+                if (_birthDate != value)
+                {
+                    _birthDate = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("roleOnSiteType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RoleOnSiteType RoleOnSiteType
+        {
+            get { return _roleOnSiteType; }
+
+            set
+            {
+                if (_roleOnSiteType != value)
+                {
+                    _roleOnSiteType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
 
         [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PersonType Type
@@ -17310,6 +17565,21 @@ namespace Customer.GeneratedServices
                 if (_isDeleted != value)
                 {
                     _isDeleted = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("categoryId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? CategoryId
+        {
+            get { return _categoryId; }
+
+            set
+            {
+                if (_categoryId != value)
+                {
+                    _categoryId = value;
                     RaisePropertyChanged();
                 }
             }
@@ -17561,6 +17831,12 @@ namespace Customer.GeneratedServices
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class PersonLanguageContract : System.ComponentModel.INotifyPropertyChanged
     {
+        private string _nationalCode;
+        private GenderType _genderType;
+        private NationalityType _nationalityType;
+        private MaritalStatusType _maritalStatus;
+        private System.DateTimeOffset? _birthDate;
+        private RoleOnSiteType _roleOnSiteType;
         private PersonType _type;
         private string _description;
         private string _uniqueIdentity;
@@ -17568,9 +17844,101 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _modificationDateTime;
         private System.DateTimeOffset? _deletedDateTime;
         private bool _isDeleted;
+        private long? _categoryId;
         private long _id;
         private System.Collections.Generic.ICollection<LanguageDataContract> _firstNames;
         private System.Collections.Generic.ICollection<LanguageDataContract> _lastNames;
+
+        [Newtonsoft.Json.JsonProperty("nationalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string NationalCode
+        {
+            get { return _nationalCode; }
+
+            set
+            {
+                if (_nationalCode != value)
+                {
+                    _nationalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("genderType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public GenderType GenderType
+        {
+            get { return _genderType; }
+
+            set
+            {
+                if (_genderType != value)
+                {
+                    _genderType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("nationalityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public NationalityType NationalityType
+        {
+            get { return _nationalityType; }
+
+            set
+            {
+                if (_nationalityType != value)
+                {
+                    _nationalityType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("maritalStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public MaritalStatusType MaritalStatus
+        {
+            get { return _maritalStatus; }
+
+            set
+            {
+                if (_maritalStatus != value)
+                {
+                    _maritalStatus = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("birthDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonConverter(typeof(DateFormatConverter))]
+        public System.DateTimeOffset? BirthDate
+        {
+            get { return _birthDate; }
+
+            set
+            {
+                if (_birthDate != value)
+                {
+                    _birthDate = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("roleOnSiteType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RoleOnSiteType RoleOnSiteType
+        {
+            get { return _roleOnSiteType; }
+
+            set
+            {
+                if (_roleOnSiteType != value)
+                {
+                    _roleOnSiteType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
 
         [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PersonType Type
@@ -17672,6 +18040,21 @@ namespace Customer.GeneratedServices
                 if (_isDeleted != value)
                 {
                     _isDeleted = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("categoryId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? CategoryId
+        {
+            get { return _categoryId; }
+
+            set
+            {
+                if (_categoryId != value)
+                {
+                    _categoryId = value;
                     RaisePropertyChanged();
                 }
             }
@@ -18413,6 +18796,28 @@ namespace Customer.GeneratedServices
         WorkFax = 9,
 
         HomeFax = 10,
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public enum RoleOnSiteType
+    {
+
+        None = 0,
+
+        Default = 1,
+
+        All = 2,
+
+        Other = 3,
+
+        Unknown = 4,
+
+        Nothing = 5,
+
+        Customer = 6,
+
+        Seller = 7,
 
     }
 
@@ -19387,6 +19792,12 @@ namespace Customer.GeneratedServices
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class UpdatePersonRequestContract : System.ComponentModel.INotifyPropertyChanged
     {
+        private string _nationalCode;
+        private GenderType _genderType;
+        private NationalityType _nationalityType;
+        private MaritalStatusType _maritalStatus;
+        private System.DateTimeOffset? _birthDate;
+        private RoleOnSiteType _roleOnSiteType;
         private PersonType _type;
         private string _description;
         private string _uniqueIdentity;
@@ -19394,9 +19805,101 @@ namespace Customer.GeneratedServices
         private System.DateTimeOffset? _modificationDateTime;
         private System.DateTimeOffset? _deletedDateTime;
         private bool _isDeleted;
+        private long? _categoryId;
         private System.Collections.Generic.ICollection<LanguageDataContract> _firstNames;
         private System.Collections.Generic.ICollection<LanguageDataContract> _lastNames;
         private long _id;
+
+        [Newtonsoft.Json.JsonProperty("nationalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string NationalCode
+        {
+            get { return _nationalCode; }
+
+            set
+            {
+                if (_nationalCode != value)
+                {
+                    _nationalCode = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("genderType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public GenderType GenderType
+        {
+            get { return _genderType; }
+
+            set
+            {
+                if (_genderType != value)
+                {
+                    _genderType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("nationalityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public NationalityType NationalityType
+        {
+            get { return _nationalityType; }
+
+            set
+            {
+                if (_nationalityType != value)
+                {
+                    _nationalityType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("maritalStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public MaritalStatusType MaritalStatus
+        {
+            get { return _maritalStatus; }
+
+            set
+            {
+                if (_maritalStatus != value)
+                {
+                    _maritalStatus = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("birthDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonConverter(typeof(DateFormatConverter))]
+        public System.DateTimeOffset? BirthDate
+        {
+            get { return _birthDate; }
+
+            set
+            {
+                if (_birthDate != value)
+                {
+                    _birthDate = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("roleOnSiteType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RoleOnSiteType RoleOnSiteType
+        {
+            get { return _roleOnSiteType; }
+
+            set
+            {
+                if (_roleOnSiteType != value)
+                {
+                    _roleOnSiteType = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
 
         [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PersonType Type
@@ -19498,6 +20001,21 @@ namespace Customer.GeneratedServices
                 if (_isDeleted != value)
                 {
                     _isDeleted = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("categoryId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? CategoryId
+        {
+            get { return _categoryId; }
+
+            set
+            {
+                if (_categoryId != value)
+                {
+                    _categoryId = value;
                     RaisePropertyChanged();
                 }
             }
