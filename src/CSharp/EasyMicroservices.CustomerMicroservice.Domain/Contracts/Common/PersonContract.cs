@@ -11,5 +11,8 @@ namespace EasyMicroservices.CustomerMicroservice.Contracts.Common
 
         [ContentLanguage]
         public string LastName { get; set; }
+
+        [ContentLanguage]
+        public string Description { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using EasyMicroservices.Cores.Relational.EntityFrameworkCore.Intrerfaces;
 using EasyMicroservices.CustomerMicroservice.Database.Entities;
 using EasyMicroservices.CustomerMicroservice.Database.Entities.Releations;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace EasyMicroservices.CustomerMicroservice.Database.Contexts
 {
@@ -21,6 +22,7 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Contexts
         public DbSet<VisaEntity> Visas { get; set; }
         public DbSet<PersonRelationEntity> PersonRelations { get; set; }
         public DbSet<PersonCategoryEntity> PersonCategories { get; set; }
+        public DbSet<LinkEntity> Links { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

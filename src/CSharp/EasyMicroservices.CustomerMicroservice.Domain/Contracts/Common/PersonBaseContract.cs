@@ -23,5 +23,9 @@ namespace EasyMicroservices.CustomerMicroservice.Contracts.Common
         public bool IsDeleted { get; set; }
 
         public long? CategoryId { get; set; }
+
+        public long? CityId { get; set; }
+        public long? CountryId { get; set; }
+        public long? ProvinceId { get; set; }
     }
 }
