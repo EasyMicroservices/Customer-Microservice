@@ -3,6 +3,7 @@ using EasyMicroservices.Cores.AspCoreApi;
 using EasyMicroservices.Cores.AspEntityFrameworkCoreApi.Interfaces;
 using EasyMicroservices.Cores.Contracts.Requests;
 using EasyMicroservices.Cores.Interfaces;
+using EasyMicroservices.CustomerMicroservice.Contracts.Requests;
 using EasyMicroservices.ServiceContracts;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,6 +36,18 @@ namespace EasyMicroservices.CustomerMicroservice.WebApi.Controllers
                     .AsCheckedResult();
             }
             return result;
+        }
+
+        [HttpPost]
+        public async Task<MessageContract<TResponseContract>> GetByIdAndLanguage(GetByIdAndLanguageRequestContract<TId> request, CancellationToken cancellationToken = default)
+        {
+            var result = await base.GetById(request.Id, cancellationToken);
+            if (result)
+            {
+                await _contentHelper.ResolveContentLanguage(result.Result, request.Language);
+                return result.Result;
+            }
+            return result.ToContract<TResponseContract>();
         }
 
         public override async Task<ListMessageContract<TResponseContract>> Filter(FilterRequestContract filterRequest, CancellationToken cancellationToken = default)
