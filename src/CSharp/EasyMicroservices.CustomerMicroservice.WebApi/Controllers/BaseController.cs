@@ -58,7 +58,6 @@ namespace EasyMicroservices.CustomerMicroservice.WebApi.Controllers
             return result;
         }
 
-
         public override async Task<MessageContract<TResponseContract>> Update(TUpdateRequestContract request, CancellationToken cancellationToken = default)
         {
             var result = await base.Update(request, cancellationToken).AsCheckedResult();
