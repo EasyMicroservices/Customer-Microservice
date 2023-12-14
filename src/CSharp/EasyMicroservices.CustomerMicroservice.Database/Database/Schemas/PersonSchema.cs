@@ -15,6 +15,7 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Schemas
         public RoleOnSiteType? RoleOnSiteType { get; set; }
         public PersonType Type { get; set; }
         public string Description { get; set; }
+        public string ExternalServiceIdentifier { get; set; }
 
         public long? CityId { get; set; }
         public long? CountryId { get; set; }
