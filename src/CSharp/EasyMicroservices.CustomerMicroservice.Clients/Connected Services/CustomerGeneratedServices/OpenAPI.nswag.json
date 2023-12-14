@@ -8520,6 +8520,10 @@
           "type": {
             "$ref": "#/components/schemas/PersonType"
           },
+          "externalServiceIdentifier": {
+            "type": "string",
+            "nullable": true
+          },
           "description": {
             "type": "string",
             "nullable": true
@@ -10476,6 +10480,10 @@
           "type": {
             "$ref": "#/components/schemas/PersonType"
           },
+          "externalServiceIdentifier": {
+            "type": "string",
+            "nullable": true
+          },
           "description": {
             "type": "string",
             "nullable": true
@@ -10676,6 +10684,10 @@
           },
           "type": {
             "$ref": "#/components/schemas/PersonType"
+          },
+          "externalServiceIdentifier": {
+            "type": "string",
+            "nullable": true
           },
           "description": {
             "type": "string",
@@ -11443,6 +11455,10 @@
           },
           "type": {
             "$ref": "#/components/schemas/PersonType"
+          },
+          "externalServiceIdentifier": {
+            "type": "string",
+            "nullable": true
           },
           "description": {
             "type": "string",

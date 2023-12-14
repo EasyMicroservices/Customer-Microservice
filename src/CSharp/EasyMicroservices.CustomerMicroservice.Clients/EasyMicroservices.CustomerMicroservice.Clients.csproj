@@ -5,7 +5,7 @@
     <Platforms>AnyCPU;x64;x86</Platforms>
     <Authors>EasyMicroservices</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.0.6</Version>
+    <Version>0.0.0.7</Version>
     <Description>client generated code.</Description>
     <Copyright>EasyMicroservices@gmail.com</Copyright>
     <PackageTags>microservice,address,person,visa,passport,phone,email,customer</PackageTags>
@@ -16,16 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="7.0.14">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.20.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    
+    <PackageReference Include="EasyMicroservices.Cores.Clients" Version="0.0.0.64" />
   </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework)' == 'net45'">

@@ -9,13 +9,8 @@ namespace EasyMicroservices.CustomerMicroservice.WebApi
         public static async Task Main(string[] args)
         {
             var app = CreateBuilder(args);
-            var build = await app.Build<CustomerContext>();
+            var build = await app.BuildWithUseCors<CustomerContext>(null, true);
             build.MapControllers();
-            build.UseCors(x => x
-            .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowCredentials()
-            .SetIsOriginAllowed(origin => true));
             build.Run();
         }
 
@@ -27,6 +22,7 @@ namespace EasyMicroservices.CustomerMicroservice.WebApi
             app.Services.AddTransient(serviceProvider => new CustomerContext(serviceProvider.GetService<IEntityFrameworkCoreDatabaseBuilder>()));
             app.Services.AddScoped<IEntityFrameworkCoreDatabaseBuilder>(serviceProvider => new DatabaseBuilder(serviceProvider.GetService<IConfiguration>()));
 
+            StartUpExtensions.AddAuthentication("RootAddresses:Authentication");
             StartUpExtensions.AddWhiteLabel("Customer", "RootAddresses:WhiteLabel");
             return app;
         }

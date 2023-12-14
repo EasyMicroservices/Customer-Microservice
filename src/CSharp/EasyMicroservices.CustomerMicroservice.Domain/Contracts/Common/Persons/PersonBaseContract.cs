@@ -14,6 +14,7 @@ namespace EasyMicroservices.CustomerMicroservice.Contracts.Common.Persons
         public DateOnly? BirthDate { get; set; }
         public RoleOnSiteType? RoleOnSiteType { get; set; }
         public PersonType Type { get; set; }
+        public string ExternalServiceIdentifier { get; set; }
 
         public string Description { get; set; }
         public string UniqueIdentity { get; set; }
