@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.CustomerM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.CustomerMicroservice.Logics", "EasyMicroservices.CustomerMicroservice.Logics\EasyMicroservices.CustomerMicroservice.Logics.csproj", "{19CB83B3-9617-469C-A064-6619A752630F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.CustomerMicroservice.StartUp", "EasyMicroservices.CustomerMicroservice.StartUp\EasyMicroservices.CustomerMicroservice.StartUp.csproj", "{1C645056-B212-44F1-8180-06DC5C06700D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.CustomerMicroservice.Database", "EasyMicroservices.CustomerMicroservice.Database\EasyMicroservices.CustomerMicroservice.Database.csproj", "{0870D7AE-CE25-4292-9187-A3E231057FD2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.CustomerMicroservice.Domain", "EasyMicroservices.CustomerMicroservice.Domain\EasyMicroservices.CustomerMicroservice.Domain.csproj", "{03185D3C-E3B7-4577-9E9E-3919528C6CE8}"
@@ -71,18 +69,6 @@ Global
 		{19CB83B3-9617-469C-A064-6619A752630F}.Release|x64.Build.0 = Release|Any CPU
 		{19CB83B3-9617-469C-A064-6619A752630F}.Release|x86.ActiveCfg = Release|Any CPU
 		{19CB83B3-9617-469C-A064-6619A752630F}.Release|x86.Build.0 = Release|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Debug|x64.Build.0 = Debug|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Debug|x86.Build.0 = Debug|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Release|x64.ActiveCfg = Release|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Release|x64.Build.0 = Release|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Release|x86.ActiveCfg = Release|Any CPU
-		{1C645056-B212-44F1-8180-06DC5C06700D}.Release|x86.Build.0 = Release|Any CPU
 		{0870D7AE-CE25-4292-9187-A3E231057FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0870D7AE-CE25-4292-9187-A3E231057FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0870D7AE-CE25-4292-9187-A3E231057FD2}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -127,7 +113,6 @@ Global
 		{A4A1E51B-754C-43F1-9F5C-524084465CB5} = {5095A63E-0C95-4352-8E6B-4586A9340BFB}
 		{96989D74-1B60-4E56-B4AA-207040490549} = {5095A63E-0C95-4352-8E6B-4586A9340BFB}
 		{19CB83B3-9617-469C-A064-6619A752630F} = {AAC7D1B4-C636-471D-8894-B1FA3D7995FB}
-		{1C645056-B212-44F1-8180-06DC5C06700D} = {AAC7D1B4-C636-471D-8894-B1FA3D7995FB}
 		{0870D7AE-CE25-4292-9187-A3E231057FD2} = {DD5CE7AE-185C-4AB5-A7AD-9CCB6051E804}
 		{03185D3C-E3B7-4577-9E9E-3919528C6CE8} = {DD5CE7AE-185C-4AB5-A7AD-9CCB6051E804}
 		{56E92A9C-2C57-481F-9C7E-24F550CD18C0} = {2A1A75C2-9A91-4588-9ADD-046CB14463CA}

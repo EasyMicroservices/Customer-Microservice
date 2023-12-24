@@ -20,7 +20,7 @@ namespace EasyMicroservices.CustomerMicroservice.WebApi
             app.Services.Builder<CustomerContext>();
             app.Services.AddScoped((serviceProvider) => new UnitOfWork(serviceProvider));
             app.Services.AddTransient(serviceProvider => new CustomerContext(serviceProvider.GetService<IEntityFrameworkCoreDatabaseBuilder>()));
-            app.Services.AddScoped<IEntityFrameworkCoreDatabaseBuilder>(serviceProvider => new DatabaseBuilder(serviceProvider.GetService<IConfiguration>()));
+            app.Services.AddTransient<IEntityFrameworkCoreDatabaseBuilder, DatabaseBuilder>();
 
             StartUpExtensions.AddAuthentication("RootAddresses:Authentication");
             StartUpExtensions.AddWhiteLabel("Customer", "RootAddresses:WhiteLabel");

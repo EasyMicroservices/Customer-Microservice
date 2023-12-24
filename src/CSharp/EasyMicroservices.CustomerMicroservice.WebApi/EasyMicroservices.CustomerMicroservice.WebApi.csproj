@@ -10,11 +10,22 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net7.0' ">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.14" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.25" />
+  </ItemGroup>
+  
   <ItemGroup>
-    <ProjectReference Include="..\EasyMicroservices.CustomerMicroservice.StartUp\EasyMicroservices.CustomerMicroservice.StartUp.csproj" />
+    <ProjectReference Include="..\EasyMicroservices.CustomerMicroservice.Logics\EasyMicroservices.CustomerMicroservice.Logics.csproj" />
   </ItemGroup>
 
 	<ItemGroup>
