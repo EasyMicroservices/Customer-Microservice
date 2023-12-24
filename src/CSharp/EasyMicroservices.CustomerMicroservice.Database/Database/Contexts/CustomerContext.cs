@@ -3,7 +3,8 @@ using EasyMicroservices.Cores.Relational.EntityFrameworkCore.Intrerfaces;
 using EasyMicroservices.CustomerMicroservice.Database.Entities;
 using EasyMicroservices.CustomerMicroservice.Database.Entities.Releations;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+using System;
+using System.ComponentModel;
 
 namespace EasyMicroservices.CustomerMicroservice.Database.Contexts
 {
@@ -24,6 +25,13 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Contexts
         public DbSet<PersonCategoryEntity> PersonCategories { get; set; }
         public DbSet<LinkEntity> Links { get; set; }
 
+        protected override void ConfigureConventions(ModelConfigurationBuilder builder)
+        {
+            builder.Properties<DateOnly>()
+                    .HaveConversion<DateOnlyConverter>()
+                    .HaveColumnType("date");
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PersonRelationEntity>(entity =>
@@ -39,6 +47,23 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Contexts
                 .HasForeignKey(x => x.ToPersonId);
             });
 
+            modelBuilder.Entity<PersonEntity>()
+                .Property(x => x.BirthDate)
+                .HasConversion(
+                    v => v.HasValue ? v.Value.ToDateTime(TimeOnly.MinValue) : (DateTime?)null,
+                    v => v.HasValue ? DateOnly.FromDateTime(v.Value) : (DateOnly?)null);
+
+            modelBuilder.Entity<VisaEntity>()
+                .Property(x => x.ExitDate)
+                .HasConversion(
+                    v => v.HasValue ? v.Value.ToDateTime(TimeOnly.MinValue) : (DateTime?)null,
+                    v => v.HasValue ? DateOnly.FromDateTime(v.Value) : (DateOnly?)null);
+
+            modelBuilder.Entity<VisaEntity>()
+                .Property(x => x.EntryDate)
+                .HasConversion(
+                    v => v.HasValue ? v.Value.ToDateTime(TimeOnly.MinValue) : (DateTime?)null,
+                    v => v.HasValue ? DateOnly.FromDateTime(v.Value) : (DateOnly?)null);
 
             base.AutoModelCreating(modelBuilder);
         }
