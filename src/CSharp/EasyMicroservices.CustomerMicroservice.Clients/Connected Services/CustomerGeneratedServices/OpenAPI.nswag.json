@@ -771,17 +771,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               }
             }
@@ -819,6 +819,55 @@
         }
       }
     },
+    "/api/Address/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Address"
+        ],
+        "operationId": "GetAllByLanguage",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AddressContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AddressContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AddressContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Address/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -831,17 +880,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               }
             }
@@ -929,17 +978,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AddressLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/AddressLanguageContractListMessageContract"
                 }
               }
             }
@@ -1713,17 +1762,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               }
             }
@@ -1761,6 +1810,55 @@
         }
       }
     },
+    "/api/Certification/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Certification"
+        ],
+        "operationId": "GetAllByLanguage2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CertificationContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CertificationContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CertificationContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Certification/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -1773,17 +1871,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               }
             }
@@ -1871,17 +1969,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CertificationLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/CertificationLanguageContractListMessageContract"
                 }
               }
             }
@@ -2655,17 +2753,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               }
             }
@@ -2703,6 +2801,55 @@
         }
       }
     },
+    "/api/Email/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Email"
+        ],
+        "operationId": "GetAllByLanguage3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmailContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmailContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmailContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Email/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -2715,17 +2862,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               }
             }
@@ -2813,17 +2960,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EmailLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/EmailLanguageContractListMessageContract"
                 }
               }
             }
@@ -3597,17 +3744,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               }
             }
@@ -3645,6 +3792,55 @@
         }
       }
     },
+    "/api/Link/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "operationId": "GetAllByLanguage4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LinkContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Link/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -3657,17 +3853,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               }
             }
@@ -3755,17 +3951,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LinkLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/LinkLanguageContractListMessageContract"
                 }
               }
             }
@@ -4539,17 +4735,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               }
             }
@@ -4587,6 +4783,55 @@
         }
       }
     },
+    "/api/Passport/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Passport"
+        ],
+        "operationId": "GetAllByLanguage5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PassportContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PassportContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PassportContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Passport/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -4599,17 +4844,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               }
             }
@@ -4697,17 +4942,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PassportLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PassportLanguageContractListMessageContract"
                 }
               }
             }
@@ -5481,17 +5726,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               }
             }
@@ -5529,6 +5774,55 @@
         }
       }
     },
+    "/api/Person/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "operationId": "GetAllByLanguage6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Person/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -5541,17 +5835,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               }
             }
@@ -5639,17 +5933,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonLanguageContractListMessageContract"
                 }
               }
             }
@@ -6423,17 +6717,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               }
             }
@@ -6471,6 +6765,55 @@
         }
       }
     },
+    "/api/PersonCategory/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "PersonCategory"
+        ],
+        "operationId": "GetAllByLanguage7",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonCategoryContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonCategoryContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonCategoryContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/PersonCategory/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -6483,17 +6826,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               }
             }
@@ -6581,17 +6924,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PersonCategoryLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PersonCategoryLanguageContractListMessageContract"
                 }
               }
             }
@@ -7365,17 +7708,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               }
             }
@@ -7413,6 +7756,55 @@
         }
       }
     },
+    "/api/Phone/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Phone"
+        ],
+        "operationId": "GetAllByLanguage8",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhoneContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhoneContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhoneContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Phone/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -7425,17 +7817,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               }
             }
@@ -7523,17 +7915,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PhoneLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/PhoneLanguageContractListMessageContract"
                 }
               }
             }
@@ -8307,17 +8699,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               }
             }
@@ -8355,6 +8747,55 @@
         }
       }
     },
+    "/api/Visa/GetAllByLanguage": {
+      "post": {
+        "tags": [
+          "Visa"
+        ],
+        "operationId": "GetAllByLanguage9",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetByLanguageRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/VisaContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VisaContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VisaContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Visa/GetAllWithAllLanguage": {
       "post": {
         "tags": [
@@ -8367,17 +8808,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               }
             }
@@ -8465,17 +8906,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VisaLanguageContractMessageContract"
+                  "$ref": "#/components/schemas/VisaLanguageContractListMessageContract"
                 }
               }
             }
@@ -8653,6 +9094,38 @@
           "id": {
             "type": "integer",
             "format": "int64"
+          }
+        }
+      },
+      "AddressLanguageContractListMessageContract": {
+        "title": "ListMessageContract<AddressLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<AddressLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/AddressLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -8860,6 +9333,38 @@
           "id": {
             "type": "integer",
             "format": "int64"
+          }
+        }
+      },
+      "CertificationLanguageContractListMessageContract": {
+        "title": "ListMessageContract<CertificationLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<CertificationLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CertificationLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -9650,6 +10155,38 @@
           }
         }
       },
+      "EmailLanguageContractListMessageContract": {
+        "title": "ListMessageContract<EmailLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<EmailLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/EmailLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        }
+      },
       "EmailLanguageContractMessageContract": {
         "title": "MessageContract<EmailLanguageContract>",
         "type": "object",
@@ -9864,6 +10401,16 @@
           6,
           7
         ]
+      },
+      "GetByLanguageRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "languageShortName": {
+            "type": "string",
+            "nullable": true
+          }
+        }
       },
       "GetByUniqueIdentityLanguageRequestContract": {
         "type": "object",
@@ -10203,6 +10750,38 @@
           "id": {
             "type": "integer",
             "format": "int64"
+          }
+        }
+      },
+      "LinkLanguageContractListMessageContract": {
+        "title": "ListMessageContract<LinkLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<LinkLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/LinkLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -10995,6 +11574,38 @@
           }
         }
       },
+      "PassportLanguageContractListMessageContract": {
+        "title": "ListMessageContract<PassportLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<PassportLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/PassportLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        }
+      },
       "PassportLanguageContractMessageContract": {
         "title": "MessageContract<PassportLanguageContract>",
         "type": "object",
@@ -11140,6 +11751,38 @@
             "items": {
               "$ref": "#/components/schemas/LanguageDataContract"
             }
+          }
+        }
+      },
+      "PersonCategoryLanguageContractListMessageContract": {
+        "title": "ListMessageContract<PersonCategoryLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<PersonCategoryLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/PersonCategoryLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -11473,6 +12116,38 @@
           }
         }
       },
+      "PersonLanguageContractListMessageContract": {
+        "title": "ListMessageContract<PersonLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<PersonLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/PersonLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        }
+      },
       "PersonLanguageContractMessageContract": {
         "title": "MessageContract<PersonLanguageContract>",
         "type": "object",
@@ -11686,6 +12361,38 @@
           "id": {
             "type": "integer",
             "format": "int64"
+          }
+        }
+      },
+      "PhoneLanguageContractListMessageContract": {
+        "title": "ListMessageContract<PhoneLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<PhoneLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/PhoneLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -12678,6 +13385,38 @@
           "id": {
             "type": "integer",
             "format": "int64"
+          }
+        }
+      },
+      "VisaLanguageContractListMessageContract": {
+        "title": "ListMessageContract<VisaLanguageContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<VisaLanguageContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/VisaLanguageContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
