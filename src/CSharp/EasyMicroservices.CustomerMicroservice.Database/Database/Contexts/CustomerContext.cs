@@ -40,11 +40,13 @@ namespace EasyMicroservices.CustomerMicroservice.Database.Contexts
 
                 entity.HasOne(x => x.FromPerson)
                 .WithMany(x => x.FromPersonRelations)
-                .HasForeignKey(x => x.FromPersonId);
+                .HasForeignKey(x => x.FromPersonId)
+                .OnDelete(DeleteBehavior.Restrict);
 
                 entity.HasOne(x => x.ToPerson)
                 .WithMany(x => x.ToPersonRelations)
-                .HasForeignKey(x => x.ToPersonId);
+                .HasForeignKey(x => x.ToPersonId)
+                .OnDelete(DeleteBehavior.Restrict);
             });
 
             modelBuilder.Entity<PersonEntity>()

@@ -628,13 +628,13 @@ namespace EasyMicroservices.CustomerMicroservice.Migrations
                     b.HasOne("EasyMicroservices.CustomerMicroservice.Database.Entities.PersonEntity", "FromPerson")
                         .WithMany("FromPersonRelations")
                         .HasForeignKey("FromPersonId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("EasyMicroservices.CustomerMicroservice.Database.Entities.PersonEntity", "ToPerson")
                         .WithMany("ToPersonRelations")
                         .HasForeignKey("ToPersonId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("FromPerson");

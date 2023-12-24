@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EasyMicroservices.CustomerMicroservice.Migrations
 {
     [DbContext(typeof(CustomerContext))]
-    [Migration("20231224170625_Initialize")]
+    [Migration("20231224172645_Initialize")]
     partial class Initialize
     {
         /// <inheritdoc />
@@ -631,13 +631,13 @@ namespace EasyMicroservices.CustomerMicroservice.Migrations
                     b.HasOne("EasyMicroservices.CustomerMicroservice.Database.Entities.PersonEntity", "FromPerson")
                         .WithMany("FromPersonRelations")
                         .HasForeignKey("FromPersonId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("EasyMicroservices.CustomerMicroservice.Database.Entities.PersonEntity", "ToPerson")
                         .WithMany("ToPersonRelations")
                         .HasForeignKey("ToPersonId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("FromPerson");
