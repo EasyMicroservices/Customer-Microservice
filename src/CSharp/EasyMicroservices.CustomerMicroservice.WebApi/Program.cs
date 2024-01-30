@@ -17,13 +17,10 @@ namespace EasyMicroservices.CustomerMicroservice.WebApi
         static WebApplicationBuilder CreateBuilder(string[] args)
         {
             var app = StartUpExtensions.Create<CustomerContext>(args);
-            app.Services.Builder<CustomerContext>();
-            app.Services.AddScoped((serviceProvider) => new UnitOfWork(serviceProvider));
-            app.Services.AddTransient(serviceProvider => new CustomerContext(serviceProvider.GetService<IEntityFrameworkCoreDatabaseBuilder>()));
+            app.Services.Builder<CustomerContext>("Places")
+                .UseDefaultSwaggerOptions();
             app.Services.AddTransient<IEntityFrameworkCoreDatabaseBuilder, DatabaseBuilder>();
-
-            StartUpExtensions.AddAuthentication("RootAddresses:Authentication");
-            StartUpExtensions.AddWhiteLabel("Customer", "RootAddresses:WhiteLabel");
+            app.Services.AddTransient(serviceProvider => new CustomerContext(serviceProvider.GetService<IEntityFrameworkCoreDatabaseBuilder>()));
             return app;
         }
     }

@@ -9,12 +9,13 @@ namespace EasyMicroservices.CustomerMicroservice
         {
         }
 
-        public override void OnConfiguring(DbContextOptionsBuilder optionsBuilder, string name)
+        public override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (name == "SqlServer")
-                optionsBuilder.UseSqlServer(Configuration.GetConnectionString("local"));
-            else
-                optionsBuilder.UseInMemoryDatabase("Customers");
+            var entity = GetEntity();
+            if (entity.IsSqlServer())
+                optionsBuilder.UseSqlServer(entity.ConnectionString);
+            else if (entity.IsInMemory())
+                optionsBuilder.UseInMemoryDatabase("Places");
         }
     }
 }
