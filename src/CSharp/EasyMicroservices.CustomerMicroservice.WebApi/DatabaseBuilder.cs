@@ -15,7 +15,7 @@ namespace EasyMicroservices.CustomerMicroservice
             if (entity.IsSqlServer())
                 optionsBuilder.UseSqlServer(entity.ConnectionString);
             else if (entity.IsInMemory())
-                optionsBuilder.UseInMemoryDatabase("Places");
+                optionsBuilder.UseInMemoryDatabase("Customers");
         }
     }
 }
