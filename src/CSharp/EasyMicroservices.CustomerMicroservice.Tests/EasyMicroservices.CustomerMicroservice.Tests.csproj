@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
@@ -29,9 +29,6 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.4">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
-    </PackageReference>    
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing">
-      <Version>7.0.14</Version>
     </PackageReference>
   </ItemGroup>
 
