@@ -9808,11 +9808,11 @@
             }
           },
           "addresses": {
-            "title": "List<AddressBaseContract>",
+            "title": "List<UpdateAddressRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/AddressBaseContract"
+              "$ref": "#/components/schemas/UpdateAddressRequestContract"
             }
           },
           "emails": {
@@ -11902,11 +11902,11 @@
             "nullable": true
           },
           "addresses": {
-            "title": "List<AddressBaseContract>",
+            "title": "List<AddressContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/AddressBaseContract"
+              "$ref": "#/components/schemas/AddressContract"
             }
           },
           "emails": {
@@ -12965,11 +12965,11 @@
             }
           },
           "addresses": {
-            "title": "List<AddressBaseContract>",
+            "title": "List<UpdateAddressRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/AddressBaseContract"
+              "$ref": "#/components/schemas/UpdateAddressRequestContract"
             }
           },
           "emails": {
@@ -13439,6 +13439,19 @@
           }
         }
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter your token in the text input below.\r\n Example: \"Bearer {token}\"",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ]
 }

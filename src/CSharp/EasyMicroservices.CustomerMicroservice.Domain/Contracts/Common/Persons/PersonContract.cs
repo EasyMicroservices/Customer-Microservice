@@ -20,7 +20,7 @@ namespace EasyMicroservices.CustomerMicroservice.Contracts.Common.Persons
         [ContentLanguage]
         public string LastName { get; set; }
 
-        public List<AddressBaseContract> Addresses { get; set; }
+        public List<AddressContract> Addresses { get; set; }
         public List<EmailBaseContract> Emails { get; set; }
         public List<PassportBaseContract> Passports { get; set; }
         public List<PhoneBaseContract> Phones { get; set; }

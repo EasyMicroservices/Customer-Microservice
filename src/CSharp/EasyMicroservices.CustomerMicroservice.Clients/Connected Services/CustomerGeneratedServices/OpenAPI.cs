@@ -18534,7 +18534,7 @@ namespace Customer.GeneratedServices
         private long? _provinceId;
         private System.Collections.Generic.ICollection<LanguageDataContract> _firstNames;
         private System.Collections.Generic.ICollection<LanguageDataContract> _lastNames;
-        private System.Collections.Generic.ICollection<AddressBaseContract> _addresses;
+        private System.Collections.Generic.ICollection<UpdateAddressRequestContract> _addresses;
         private System.Collections.Generic.ICollection<EmailBaseContract> _emails;
         private System.Collections.Generic.ICollection<PassportBaseContract> _passports;
         private System.Collections.Generic.ICollection<PhoneBaseContract> _phones;
@@ -18844,7 +18844,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("addresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AddressBaseContract> Addresses
+        public System.Collections.Generic.ICollection<UpdateAddressRequestContract> Addresses
         {
             get { return _addresses; }
 
@@ -23966,7 +23966,7 @@ namespace Customer.GeneratedServices
         private long _id;
         private string _firstName;
         private string _lastName;
-        private System.Collections.Generic.ICollection<AddressBaseContract> _addresses;
+        private System.Collections.Generic.ICollection<AddressContract> _addresses;
         private System.Collections.Generic.ICollection<EmailBaseContract> _emails;
         private System.Collections.Generic.ICollection<PassportBaseContract> _passports;
         private System.Collections.Generic.ICollection<PhoneBaseContract> _phones;
@@ -24291,7 +24291,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("addresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AddressBaseContract> Addresses
+        public System.Collections.Generic.ICollection<AddressContract> Addresses
         {
             get { return _addresses; }
 
@@ -27237,7 +27237,7 @@ namespace Customer.GeneratedServices
         private long? _provinceId;
         private System.Collections.Generic.ICollection<LanguageDataContract> _firstNames;
         private System.Collections.Generic.ICollection<LanguageDataContract> _lastNames;
-        private System.Collections.Generic.ICollection<AddressBaseContract> _addresses;
+        private System.Collections.Generic.ICollection<UpdateAddressRequestContract> _addresses;
         private System.Collections.Generic.ICollection<EmailBaseContract> _emails;
         private System.Collections.Generic.ICollection<PassportBaseContract> _passports;
         private System.Collections.Generic.ICollection<PhoneBaseContract> _phones;
@@ -27548,7 +27548,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("addresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AddressBaseContract> Addresses
+        public System.Collections.Generic.ICollection<UpdateAddressRequestContract> Addresses
         {
             get { return _addresses; }
 
