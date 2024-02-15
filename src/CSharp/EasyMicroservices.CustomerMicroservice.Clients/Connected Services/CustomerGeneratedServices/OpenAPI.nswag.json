@@ -8927,43 +8927,6 @@
   },
   "components": {
     "schemas": {
-      "AddressBaseContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "postalCode": {
-            "type": "string",
-            "nullable": true
-          },
-          "address": {
-            "type": "string",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          },
-          "creationDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "modificationDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "deletedDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isDeleted": {
-            "type": "boolean"
-          }
-        }
-      },
       "AddressContract": {
         "type": "object",
         "additionalProperties": false,
@@ -9145,49 +9108,6 @@
           },
           "result": {
             "$ref": "#/components/schemas/AddressLanguageContract"
-          }
-        }
-      },
-      "CertificationBaseContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "code": {
-            "type": "string",
-            "nullable": true
-          },
-          "certificationDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          },
-          "creationDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "modificationDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "deletedDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isDeleted": {
-            "type": "boolean"
           }
         }
       },
@@ -9808,59 +9728,59 @@
             }
           },
           "addresses": {
-            "title": "List<AddressBaseContract>",
+            "title": "List<UpdateAddressRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/AddressBaseContract"
+              "$ref": "#/components/schemas/UpdateAddressRequestContract"
             }
           },
           "emails": {
-            "title": "List<EmailBaseContract>",
+            "title": "List<UpdateEmailRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/EmailBaseContract"
+              "$ref": "#/components/schemas/UpdateEmailRequestContract"
             }
           },
           "passports": {
-            "title": "List<PassportBaseContract>",
+            "title": "List<UpdatePassportRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/PassportBaseContract"
+              "$ref": "#/components/schemas/UpdatePassportRequestContract"
             }
           },
           "phones": {
-            "title": "List<PhoneBaseContract>",
+            "title": "List<UpdatePhoneRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/PhoneBaseContract"
+              "$ref": "#/components/schemas/UpdatePhoneRequestContract"
             }
           },
           "certifications": {
-            "title": "List<CertificationBaseContract>",
+            "title": "List<UpdateCertificationRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/CertificationBaseContract"
+              "$ref": "#/components/schemas/UpdateCertificationRequestContract"
             }
           },
           "visas": {
-            "title": "List<VisaBaseContract>",
+            "title": "List<UpdateVisaRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/VisaBaseContract"
+              "$ref": "#/components/schemas/UpdateVisaRequestContract"
             }
           },
           "links": {
-            "title": "List<LinkBaseContract>",
+            "title": "List<UpdateLinkRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/LinkBaseContract"
+              "$ref": "#/components/schemas/UpdateLinkRequestContract"
             }
           }
         }
@@ -9994,39 +9914,6 @@
             "items": {
               "$ref": "#/components/schemas/CreateVisaRequestContract"
             }
-          }
-        }
-      },
-      "EmailBaseContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "address": {
-            "type": "string",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          },
-          "creationDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "modificationDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "deletedDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isDeleted": {
-            "type": "boolean"
           }
         }
       },
@@ -10583,42 +10470,6 @@
           "data": {
             "type": "string",
             "nullable": true
-          }
-        }
-      },
-      "LinkBaseContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "address": {
-            "type": "string",
-            "nullable": true
-          },
-          "type": {
-            "$ref": "#/components/schemas/LinkType"
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          },
-          "creationDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "modificationDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "deletedDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isDeleted": {
-            "type": "boolean"
           }
         }
       },
@@ -11383,50 +11234,6 @@
           254
         ]
       },
-      "PassportBaseContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "countryShortName": {
-            "type": "string",
-            "nullable": true
-          },
-          "holderNationalityType": {
-            "$ref": "#/components/schemas/NationalityType"
-          },
-          "expirationDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "number": {
-            "type": "string",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          },
-          "creationDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "modificationDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "deletedDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isDeleted": {
-            "type": "boolean"
-          }
-        }
-      },
       "PassportContract": {
         "type": "object",
         "additionalProperties": false,
@@ -11902,59 +11709,59 @@
             "nullable": true
           },
           "addresses": {
-            "title": "List<AddressBaseContract>",
+            "title": "List<AddressContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/AddressBaseContract"
+              "$ref": "#/components/schemas/AddressContract"
             }
           },
           "emails": {
-            "title": "List<EmailBaseContract>",
+            "title": "List<EmailContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/EmailBaseContract"
+              "$ref": "#/components/schemas/EmailContract"
             }
           },
           "passports": {
-            "title": "List<PassportBaseContract>",
+            "title": "List<PassportContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/PassportBaseContract"
+              "$ref": "#/components/schemas/PassportContract"
             }
           },
           "phones": {
-            "title": "List<PhoneBaseContract>",
+            "title": "List<PhoneContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/PhoneBaseContract"
+              "$ref": "#/components/schemas/PhoneContract"
             }
           },
           "certifications": {
-            "title": "List<CertificationBaseContract>",
+            "title": "List<CertificationContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/CertificationBaseContract"
+              "$ref": "#/components/schemas/CertificationContract"
             }
           },
           "visas": {
-            "title": "List<VisaBaseContract>",
+            "title": "List<VisaContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/VisaBaseContract"
+              "$ref": "#/components/schemas/VisaContract"
             }
           },
           "links": {
-            "title": "List<LinkBaseContract>",
+            "title": "List<LinkContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/LinkBaseContract"
+              "$ref": "#/components/schemas/LinkContract"
             }
           }
         }
@@ -12196,42 +12003,6 @@
           9,
           10
         ]
-      },
-      "PhoneBaseContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "number": {
-            "type": "string",
-            "nullable": true
-          },
-          "numberType": {
-            "$ref": "#/components/schemas/PhoneNumberType"
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          },
-          "creationDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "modificationDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "deletedDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isDeleted": {
-            "type": "boolean"
-          }
-        }
       },
       "PhoneContract": {
         "type": "object",
@@ -12965,59 +12736,59 @@
             }
           },
           "addresses": {
-            "title": "List<AddressBaseContract>",
+            "title": "List<UpdateAddressRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/AddressBaseContract"
+              "$ref": "#/components/schemas/UpdateAddressRequestContract"
             }
           },
           "emails": {
-            "title": "List<EmailBaseContract>",
+            "title": "List<UpdateEmailRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/EmailBaseContract"
+              "$ref": "#/components/schemas/UpdateEmailRequestContract"
             }
           },
           "passports": {
-            "title": "List<PassportBaseContract>",
+            "title": "List<UpdatePassportRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/PassportBaseContract"
+              "$ref": "#/components/schemas/UpdatePassportRequestContract"
             }
           },
           "phones": {
-            "title": "List<PhoneBaseContract>",
+            "title": "List<UpdatePhoneRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/PhoneBaseContract"
+              "$ref": "#/components/schemas/UpdatePhoneRequestContract"
             }
           },
           "certifications": {
-            "title": "List<CertificationBaseContract>",
+            "title": "List<UpdateCertificationRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/CertificationBaseContract"
+              "$ref": "#/components/schemas/UpdateCertificationRequestContract"
             }
           },
           "visas": {
-            "title": "List<VisaBaseContract>",
+            "title": "List<UpdateVisaRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/VisaBaseContract"
+              "$ref": "#/components/schemas/UpdateVisaRequestContract"
             }
           },
           "links": {
-            "title": "List<LinkBaseContract>",
+            "title": "List<UpdateLinkRequestContract>",
             "type": "array",
             "nullable": true,
             "items": {
-              "$ref": "#/components/schemas/LinkBaseContract"
+              "$ref": "#/components/schemas/UpdateLinkRequestContract"
             }
           },
           "id": {
@@ -13173,57 +12944,6 @@
           "message": {
             "type": "string",
             "nullable": true
-          }
-        }
-      },
-      "VisaBaseContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "entryDate": {
-            "title": "Nullable<DateOnly>",
-            "type": "string",
-            "format": "date",
-            "nullable": true
-          },
-          "exitDate": {
-            "title": "Nullable<DateOnly>",
-            "type": "string",
-            "format": "date",
-            "nullable": true
-          },
-          "duration": {
-            "title": "Nullable<Int32>",
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "number": {
-            "type": "string",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          },
-          "creationDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "modificationDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "deletedDateTime": {
-            "title": "Nullable<DateTime>",
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isDeleted": {
-            "type": "boolean"
           }
         }
       },
@@ -13439,6 +13159,19 @@
           }
         }
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter your token in the text input below.\r\n Example: \"Bearer {token}\"",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ]
 }

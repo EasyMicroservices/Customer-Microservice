@@ -15940,132 +15940,6 @@ namespace Customer.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class AddressBaseContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private string _postalCode;
-        private string _address;
-        private string _uniqueIdentity;
-        private System.DateTime _creationDateTime;
-        private System.DateTime? _modificationDateTime;
-        private System.DateTime? _deletedDateTime;
-        private bool _isDeleted;
-
-        [Newtonsoft.Json.JsonProperty("postalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string PostalCode
-        {
-            get { return _postalCode; }
-
-            set
-            {
-                if (_postalCode != value)
-                {
-                    _postalCode = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Address
-        {
-            get { return _address; }
-
-            set
-            {
-                if (_address != value)
-                {
-                    _address = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("creationDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime CreationDateTime
-        {
-            get { return _creationDateTime; }
-
-            set
-            {
-                if (_creationDateTime != value)
-                {
-                    _creationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("modificationDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? ModificationDateTime
-        {
-            get { return _modificationDateTime; }
-
-            set
-            {
-                if (_modificationDateTime != value)
-                {
-                    _modificationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("deletedDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? DeletedDateTime
-        {
-            get { return _deletedDateTime; }
-
-            set
-            {
-                if (_deletedDateTime != value)
-                {
-                    _deletedDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("isDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool IsDeleted
-        {
-            get { return _isDeleted; }
-
-            set
-            {
-                if (_isDeleted != value)
-                {
-                    _isDeleted = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class AddressContract : System.ComponentModel.INotifyPropertyChanged
     {
         private string _postalCode;
@@ -16710,148 +16584,6 @@ namespace Customer.GeneratedServices
                 if (_result != value)
                 {
                     _result = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class CertificationBaseContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private string _name;
-        private string _code;
-        private System.DateTime? _certificationDateTime;
-        private string _uniqueIdentity;
-        private System.DateTime _creationDateTime;
-        private System.DateTime? _modificationDateTime;
-        private System.DateTime? _deletedDateTime;
-        private bool _isDeleted;
-
-        [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Name
-        {
-            get { return _name; }
-
-            set
-            {
-                if (_name != value)
-                {
-                    _name = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Code
-        {
-            get { return _code; }
-
-            set
-            {
-                if (_code != value)
-                {
-                    _code = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("certificationDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? CertificationDateTime
-        {
-            get { return _certificationDateTime; }
-
-            set
-            {
-                if (_certificationDateTime != value)
-                {
-                    _certificationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("creationDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime CreationDateTime
-        {
-            get { return _creationDateTime; }
-
-            set
-            {
-                if (_creationDateTime != value)
-                {
-                    _creationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("modificationDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? ModificationDateTime
-        {
-            get { return _modificationDateTime; }
-
-            set
-            {
-                if (_modificationDateTime != value)
-                {
-                    _modificationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("deletedDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? DeletedDateTime
-        {
-            get { return _deletedDateTime; }
-
-            set
-            {
-                if (_deletedDateTime != value)
-                {
-                    _deletedDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("isDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool IsDeleted
-        {
-            get { return _isDeleted; }
-
-            set
-            {
-                if (_isDeleted != value)
-                {
-                    _isDeleted = value;
                     RaisePropertyChanged();
                 }
             }
@@ -18534,13 +18266,13 @@ namespace Customer.GeneratedServices
         private long? _provinceId;
         private System.Collections.Generic.ICollection<LanguageDataContract> _firstNames;
         private System.Collections.Generic.ICollection<LanguageDataContract> _lastNames;
-        private System.Collections.Generic.ICollection<AddressBaseContract> _addresses;
-        private System.Collections.Generic.ICollection<EmailBaseContract> _emails;
-        private System.Collections.Generic.ICollection<PassportBaseContract> _passports;
-        private System.Collections.Generic.ICollection<PhoneBaseContract> _phones;
-        private System.Collections.Generic.ICollection<CertificationBaseContract> _certifications;
-        private System.Collections.Generic.ICollection<VisaBaseContract> _visas;
-        private System.Collections.Generic.ICollection<LinkBaseContract> _links;
+        private System.Collections.Generic.ICollection<UpdateAddressRequestContract> _addresses;
+        private System.Collections.Generic.ICollection<UpdateEmailRequestContract> _emails;
+        private System.Collections.Generic.ICollection<UpdatePassportRequestContract> _passports;
+        private System.Collections.Generic.ICollection<UpdatePhoneRequestContract> _phones;
+        private System.Collections.Generic.ICollection<UpdateCertificationRequestContract> _certifications;
+        private System.Collections.Generic.ICollection<UpdateVisaRequestContract> _visas;
+        private System.Collections.Generic.ICollection<UpdateLinkRequestContract> _links;
 
         [Newtonsoft.Json.JsonProperty("nationalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NationalCode
@@ -18844,7 +18576,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("addresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AddressBaseContract> Addresses
+        public System.Collections.Generic.ICollection<UpdateAddressRequestContract> Addresses
         {
             get { return _addresses; }
 
@@ -18859,7 +18591,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("emails", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<EmailBaseContract> Emails
+        public System.Collections.Generic.ICollection<UpdateEmailRequestContract> Emails
         {
             get { return _emails; }
 
@@ -18874,7 +18606,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("passports", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<PassportBaseContract> Passports
+        public System.Collections.Generic.ICollection<UpdatePassportRequestContract> Passports
         {
             get { return _passports; }
 
@@ -18889,7 +18621,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("phones", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<PhoneBaseContract> Phones
+        public System.Collections.Generic.ICollection<UpdatePhoneRequestContract> Phones
         {
             get { return _phones; }
 
@@ -18904,7 +18636,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("certifications", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<CertificationBaseContract> Certifications
+        public System.Collections.Generic.ICollection<UpdateCertificationRequestContract> Certifications
         {
             get { return _certifications; }
 
@@ -18919,7 +18651,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("visas", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<VisaBaseContract> Visas
+        public System.Collections.Generic.ICollection<UpdateVisaRequestContract> Visas
         {
             get { return _visas; }
 
@@ -18934,7 +18666,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LinkBaseContract> Links
+        public System.Collections.Generic.ICollection<UpdateLinkRequestContract> Links
         {
             get { return _links; }
 
@@ -19319,116 +19051,6 @@ namespace Customer.GeneratedServices
                 if (_items != value)
                 {
                     _items = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class EmailBaseContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private string _address;
-        private string _uniqueIdentity;
-        private System.DateTime _creationDateTime;
-        private System.DateTime? _modificationDateTime;
-        private System.DateTime? _deletedDateTime;
-        private bool _isDeleted;
-
-        [Newtonsoft.Json.JsonProperty("address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Address
-        {
-            get { return _address; }
-
-            set
-            {
-                if (_address != value)
-                {
-                    _address = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("creationDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime CreationDateTime
-        {
-            get { return _creationDateTime; }
-
-            set
-            {
-                if (_creationDateTime != value)
-                {
-                    _creationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("modificationDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? ModificationDateTime
-        {
-            get { return _modificationDateTime; }
-
-            set
-            {
-                if (_modificationDateTime != value)
-                {
-                    _modificationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("deletedDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? DeletedDateTime
-        {
-            get { return _deletedDateTime; }
-
-            set
-            {
-                if (_deletedDateTime != value)
-                {
-                    _deletedDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("isDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool IsDeleted
-        {
-            get { return _isDeleted; }
-
-            set
-            {
-                if (_isDeleted != value)
-                {
-                    _isDeleted = value;
                     RaisePropertyChanged();
                 }
             }
@@ -21027,132 +20649,6 @@ namespace Customer.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class LinkBaseContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private string _address;
-        private LinkType _type;
-        private string _uniqueIdentity;
-        private System.DateTime _creationDateTime;
-        private System.DateTime? _modificationDateTime;
-        private System.DateTime? _deletedDateTime;
-        private bool _isDeleted;
-
-        [Newtonsoft.Json.JsonProperty("address", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Address
-        {
-            get { return _address; }
-
-            set
-            {
-                if (_address != value)
-                {
-                    _address = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public LinkType Type
-        {
-            get { return _type; }
-
-            set
-            {
-                if (_type != value)
-                {
-                    _type = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("creationDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime CreationDateTime
-        {
-            get { return _creationDateTime; }
-
-            set
-            {
-                if (_creationDateTime != value)
-                {
-                    _creationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("modificationDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? ModificationDateTime
-        {
-            get { return _modificationDateTime; }
-
-            set
-            {
-                if (_modificationDateTime != value)
-                {
-                    _modificationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("deletedDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? DeletedDateTime
-        {
-            get { return _deletedDateTime; }
-
-            set
-            {
-                if (_deletedDateTime != value)
-                {
-                    _deletedDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("isDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool IsDeleted
-        {
-            get { return _isDeleted; }
-
-            set
-            {
-                if (_isDeleted != value)
-                {
-                    _isDeleted = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class LinkContract : System.ComponentModel.INotifyPropertyChanged
     {
         private string _address;
@@ -22430,164 +21926,6 @@ namespace Customer.GeneratedServices
 
         ALA = 254,
 
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class PassportBaseContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private string _countryShortName;
-        private NationalityType _holderNationalityType;
-        private System.DateTime _expirationDate;
-        private string _number;
-        private string _uniqueIdentity;
-        private System.DateTime _creationDateTime;
-        private System.DateTime? _modificationDateTime;
-        private System.DateTime? _deletedDateTime;
-        private bool _isDeleted;
-
-        [Newtonsoft.Json.JsonProperty("countryShortName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string CountryShortName
-        {
-            get { return _countryShortName; }
-
-            set
-            {
-                if (_countryShortName != value)
-                {
-                    _countryShortName = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("holderNationalityType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public NationalityType HolderNationalityType
-        {
-            get { return _holderNationalityType; }
-
-            set
-            {
-                if (_holderNationalityType != value)
-                {
-                    _holderNationalityType = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("expirationDate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime ExpirationDate
-        {
-            get { return _expirationDate; }
-
-            set
-            {
-                if (_expirationDate != value)
-                {
-                    _expirationDate = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("number", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Number
-        {
-            get { return _number; }
-
-            set
-            {
-                if (_number != value)
-                {
-                    _number = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("creationDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime CreationDateTime
-        {
-            get { return _creationDateTime; }
-
-            set
-            {
-                if (_creationDateTime != value)
-                {
-                    _creationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("modificationDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? ModificationDateTime
-        {
-            get { return _modificationDateTime; }
-
-            set
-            {
-                if (_modificationDateTime != value)
-                {
-                    _modificationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("deletedDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? DeletedDateTime
-        {
-            get { return _deletedDateTime; }
-
-            set
-            {
-                if (_deletedDateTime != value)
-                {
-                    _deletedDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("isDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool IsDeleted
-        {
-            get { return _isDeleted; }
-
-            set
-            {
-                if (_isDeleted != value)
-                {
-                    _isDeleted = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
@@ -23966,13 +23304,13 @@ namespace Customer.GeneratedServices
         private long _id;
         private string _firstName;
         private string _lastName;
-        private System.Collections.Generic.ICollection<AddressBaseContract> _addresses;
-        private System.Collections.Generic.ICollection<EmailBaseContract> _emails;
-        private System.Collections.Generic.ICollection<PassportBaseContract> _passports;
-        private System.Collections.Generic.ICollection<PhoneBaseContract> _phones;
-        private System.Collections.Generic.ICollection<CertificationBaseContract> _certifications;
-        private System.Collections.Generic.ICollection<VisaBaseContract> _visas;
-        private System.Collections.Generic.ICollection<LinkBaseContract> _links;
+        private System.Collections.Generic.ICollection<AddressContract> _addresses;
+        private System.Collections.Generic.ICollection<EmailContract> _emails;
+        private System.Collections.Generic.ICollection<PassportContract> _passports;
+        private System.Collections.Generic.ICollection<PhoneContract> _phones;
+        private System.Collections.Generic.ICollection<CertificationContract> _certifications;
+        private System.Collections.Generic.ICollection<VisaContract> _visas;
+        private System.Collections.Generic.ICollection<LinkContract> _links;
 
         [Newtonsoft.Json.JsonProperty("nationalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string NationalCode
@@ -24291,7 +23629,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("addresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AddressBaseContract> Addresses
+        public System.Collections.Generic.ICollection<AddressContract> Addresses
         {
             get { return _addresses; }
 
@@ -24306,7 +23644,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("emails", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<EmailBaseContract> Emails
+        public System.Collections.Generic.ICollection<EmailContract> Emails
         {
             get { return _emails; }
 
@@ -24321,7 +23659,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("passports", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<PassportBaseContract> Passports
+        public System.Collections.Generic.ICollection<PassportContract> Passports
         {
             get { return _passports; }
 
@@ -24336,7 +23674,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("phones", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<PhoneBaseContract> Phones
+        public System.Collections.Generic.ICollection<PhoneContract> Phones
         {
             get { return _phones; }
 
@@ -24351,7 +23689,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("certifications", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<CertificationBaseContract> Certifications
+        public System.Collections.Generic.ICollection<CertificationContract> Certifications
         {
             get { return _certifications; }
 
@@ -24366,7 +23704,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("visas", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<VisaBaseContract> Visas
+        public System.Collections.Generic.ICollection<VisaContract> Visas
         {
             get { return _visas; }
 
@@ -24381,7 +23719,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LinkBaseContract> Links
+        public System.Collections.Generic.ICollection<LinkContract> Links
         {
             get { return _links; }
 
@@ -25158,132 +24496,6 @@ namespace Customer.GeneratedServices
 
         CivilPartnership = 10,
 
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class PhoneBaseContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private string _number;
-        private PhoneNumberType _numberType;
-        private string _uniqueIdentity;
-        private System.DateTime _creationDateTime;
-        private System.DateTime? _modificationDateTime;
-        private System.DateTime? _deletedDateTime;
-        private bool _isDeleted;
-
-        [Newtonsoft.Json.JsonProperty("number", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Number
-        {
-            get { return _number; }
-
-            set
-            {
-                if (_number != value)
-                {
-                    _number = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("numberType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public PhoneNumberType NumberType
-        {
-            get { return _numberType; }
-
-            set
-            {
-                if (_numberType != value)
-                {
-                    _numberType = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("creationDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime CreationDateTime
-        {
-            get { return _creationDateTime; }
-
-            set
-            {
-                if (_creationDateTime != value)
-                {
-                    _creationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("modificationDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? ModificationDateTime
-        {
-            get { return _modificationDateTime; }
-
-            set
-            {
-                if (_modificationDateTime != value)
-                {
-                    _modificationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("deletedDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? DeletedDateTime
-        {
-            get { return _deletedDateTime; }
-
-            set
-            {
-                if (_deletedDateTime != value)
-                {
-                    _deletedDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("isDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool IsDeleted
-        {
-            get { return _isDeleted; }
-
-            set
-            {
-                if (_isDeleted != value)
-                {
-                    _isDeleted = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
@@ -27237,13 +26449,13 @@ namespace Customer.GeneratedServices
         private long? _provinceId;
         private System.Collections.Generic.ICollection<LanguageDataContract> _firstNames;
         private System.Collections.Generic.ICollection<LanguageDataContract> _lastNames;
-        private System.Collections.Generic.ICollection<AddressBaseContract> _addresses;
-        private System.Collections.Generic.ICollection<EmailBaseContract> _emails;
-        private System.Collections.Generic.ICollection<PassportBaseContract> _passports;
-        private System.Collections.Generic.ICollection<PhoneBaseContract> _phones;
-        private System.Collections.Generic.ICollection<CertificationBaseContract> _certifications;
-        private System.Collections.Generic.ICollection<VisaBaseContract> _visas;
-        private System.Collections.Generic.ICollection<LinkBaseContract> _links;
+        private System.Collections.Generic.ICollection<UpdateAddressRequestContract> _addresses;
+        private System.Collections.Generic.ICollection<UpdateEmailRequestContract> _emails;
+        private System.Collections.Generic.ICollection<UpdatePassportRequestContract> _passports;
+        private System.Collections.Generic.ICollection<UpdatePhoneRequestContract> _phones;
+        private System.Collections.Generic.ICollection<UpdateCertificationRequestContract> _certifications;
+        private System.Collections.Generic.ICollection<UpdateVisaRequestContract> _visas;
+        private System.Collections.Generic.ICollection<UpdateLinkRequestContract> _links;
         private long _id;
 
         [Newtonsoft.Json.JsonProperty("nationalCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -27548,7 +26760,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("addresses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AddressBaseContract> Addresses
+        public System.Collections.Generic.ICollection<UpdateAddressRequestContract> Addresses
         {
             get { return _addresses; }
 
@@ -27563,7 +26775,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("emails", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<EmailBaseContract> Emails
+        public System.Collections.Generic.ICollection<UpdateEmailRequestContract> Emails
         {
             get { return _emails; }
 
@@ -27578,7 +26790,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("passports", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<PassportBaseContract> Passports
+        public System.Collections.Generic.ICollection<UpdatePassportRequestContract> Passports
         {
             get { return _passports; }
 
@@ -27593,7 +26805,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("phones", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<PhoneBaseContract> Phones
+        public System.Collections.Generic.ICollection<UpdatePhoneRequestContract> Phones
         {
             get { return _phones; }
 
@@ -27608,7 +26820,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("certifications", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<CertificationBaseContract> Certifications
+        public System.Collections.Generic.ICollection<UpdateCertificationRequestContract> Certifications
         {
             get { return _certifications; }
 
@@ -27623,7 +26835,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("visas", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<VisaBaseContract> Visas
+        public System.Collections.Generic.ICollection<UpdateVisaRequestContract> Visas
         {
             get { return _visas; }
 
@@ -27638,7 +26850,7 @@ namespace Customer.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LinkBaseContract> Links
+        public System.Collections.Generic.ICollection<UpdateLinkRequestContract> Links
         {
             get { return _links; }
 
@@ -28100,166 +27312,6 @@ namespace Customer.GeneratedServices
                 if (_message != value)
                 {
                     _message = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class VisaBaseContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private System.DateTime? _entryDate;
-        private System.DateTime? _exitDate;
-        private int? _duration;
-        private string _number;
-        private string _uniqueIdentity;
-        private System.DateTime _creationDateTime;
-        private System.DateTime? _modificationDateTime;
-        private System.DateTime? _deletedDateTime;
-        private bool _isDeleted;
-
-        [Newtonsoft.Json.JsonProperty("entryDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(DateFormatConverter))]
-        public System.DateTime? EntryDate
-        {
-            get { return _entryDate; }
-
-            set
-            {
-                if (_entryDate != value)
-                {
-                    _entryDate = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("exitDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [Newtonsoft.Json.JsonConverter(typeof(DateFormatConverter))]
-        public System.DateTime? ExitDate
-        {
-            get { return _exitDate; }
-
-            set
-            {
-                if (_exitDate != value)
-                {
-                    _exitDate = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("duration", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Duration
-        {
-            get { return _duration; }
-
-            set
-            {
-                if (_duration != value)
-                {
-                    _duration = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("number", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Number
-        {
-            get { return _number; }
-
-            set
-            {
-                if (_number != value)
-                {
-                    _number = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("creationDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime CreationDateTime
-        {
-            get { return _creationDateTime; }
-
-            set
-            {
-                if (_creationDateTime != value)
-                {
-                    _creationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("modificationDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? ModificationDateTime
-        {
-            get { return _modificationDateTime; }
-
-            set
-            {
-                if (_modificationDateTime != value)
-                {
-                    _modificationDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("deletedDateTime", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTime? DeletedDateTime
-        {
-            get { return _deletedDateTime; }
-
-            set
-            {
-                if (_deletedDateTime != value)
-                {
-                    _deletedDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("isDeleted", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool IsDeleted
-        {
-            get { return _isDeleted; }
-
-            set
-            {
-                if (_isDeleted != value)
-                {
-                    _isDeleted = value;
                     RaisePropertyChanged();
                 }
             }
